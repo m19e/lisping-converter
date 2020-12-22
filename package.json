@@ -22,6 +22,7 @@
     "typescript": "^4.0.3",
     "web-vitals": "^0.2.4"
   },
+  "homepage": "http://m19e.github.io/lisping-converter",
   "scripts": {
     "start": "craco start",
     "build": "craco build",
