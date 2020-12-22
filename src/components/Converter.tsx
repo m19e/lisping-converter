@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import replaceHiragana from "../libs/converter";
 
 export default function Converter() {
     const [input, setInput] = useState("");
@@ -9,7 +10,7 @@ export default function Converter() {
     };
 
     const convert = () => {
-        setOutput(input);
+        setOutput(replaceHiragana(input));
     };
 
     return (
