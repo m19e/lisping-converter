@@ -20,10 +20,18 @@ const kanaPairs = [
     { in: "", out: "" },
 ];
 
+const getRandom = () => {
+    return Math.floor(Math.random() * 10);
+};
+
 export default function replaceHiragana(text: string): string {
     let result = "" + text;
 
-    kanaPairs.forEach((pair) => (result = result.split(pair.in).join(pair.out)));
+    kanaPairs.forEach((pair) => {
+        if (getRandom() < 5) {
+            result = result.split(pair.in).join(pair.out);
+        }
+    });
 
     return result;
 }
