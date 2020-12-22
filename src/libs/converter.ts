@@ -4,6 +4,20 @@ const kanaPairs = [
     { in: "る", out: "ぅ" },
     { in: "れ", out: "ぇ" },
     { in: "ろ", out: "ぉ" },
+    { in: "い", out: "ふぃ" },
+    { in: "こ", out: "ほ" },
+    { in: "し", out: "ひ" },
+    { in: "す", out: "ひゅ" },
+    { in: "ぜ", out: "ぇ" },
+    { in: "せ", out: "へ" },
+    { in: "だ", out: "ら" },
+    { in: "ちゃ", out: "ひゃ" },
+    { in: "た", out: "ひゃ" },
+    { in: "つ", out: "ふ" },
+    { in: "て", out: "へ" },
+    { in: "と", out: "ほ" },
+    { in: "べ", out: "へ" },
+    { in: "", out: "" },
 ];
 
 export default function replaceHiragana(text: string): string {
