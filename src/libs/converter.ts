@@ -20,7 +20,7 @@ const kanaPairs = [
     { in: "", out: "" },
 ];
 
-const getRandom = () => {
+const getRandomInt = () => {
     return Math.floor(Math.random() * 10);
 };
 
@@ -28,7 +28,7 @@ export default function replaceHiragana(text: string): string {
     let result = "" + text;
 
     kanaPairs.forEach((pair) => {
-        if (getRandom() < 5) {
+        if (getRandomInt() < 5) {
             result = result.split(pair.in).join(pair.out);
         }
     });
