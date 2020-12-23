@@ -20,8 +20,6 @@ const kanaPairs = [
     { in: "", out: "" },
 ];
 
-const kanaTargets = kanaPairs.map((p) => p.in);
-
 const getRandomInt = () => {
     return Math.floor(Math.random() * 10);
 };
