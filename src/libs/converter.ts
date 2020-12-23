@@ -27,13 +27,16 @@ const getRandomInt = () => {
 };
 
 export default function replaceHiragana(text: string): string {
-    let result = "" + text;
-
-    kanaPairs.forEach((pair) => {
-        if (getRandomInt() < 5) {
-            result = result.split(pair.in).join(pair.out);
-        }
-    });
+    const result = text
+        .split("")
+        .map((c) => {
+            let char = "" + c;
+            if (kanaMap.has(c) && getRandomInt() < 5) {
+                char = kanaMap.get(c) ?? c;
+            }
+            return char;
+        })
+        .join("");
 
     return result;
 }
