@@ -4,7 +4,6 @@ const kanaPairs = [
     { in: "る", out: "ぅ" },
     { in: "れ", out: "ぇ" },
     { in: "ろ", out: "ぉ" },
-    { in: "い", out: "ふぃ" },
     { in: "こ", out: "ほ" },
     { in: "し", out: "ひ" },
     { in: "す", out: "ひゅ" },
