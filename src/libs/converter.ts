@@ -17,8 +17,10 @@ const kanaPairs = [
     { in: "て", out: "へ" },
     { in: "と", out: "ほ" },
     { in: "べ", out: "へ" },
-    { in: "", out: "" },
+    // { in: "", out: "" },
 ];
+
+const kanaMap: Map<string, string> = new Map(kanaPairs.map((p) => [p.in, p.out]));
 
 const getRandomInt = () => {
     return Math.floor(Math.random() * 10);
