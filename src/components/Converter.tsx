@@ -18,7 +18,7 @@ export default function Converter() {
             <div className="flex-grow flex justify-center items-center p-4">
                 <textarea
                     onChange={onInputChange}
-                    placeholder="テキストを入力"
+                    placeholder="テキスト(ひらがな)を入力"
                     className="h-full w-full max-w-4xl rounded-md resize-none focus:outline-none"
                 ></textarea>
             </div>
